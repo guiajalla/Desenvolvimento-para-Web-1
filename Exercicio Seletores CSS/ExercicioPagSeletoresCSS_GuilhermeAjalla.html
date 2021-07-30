@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <title>Página de Guilherme Ajalla</title>
+	<meta charset="UTF-8">
+    <style>
+		body div{
+			background-color: blue;
+			border: 2px solid black;
+			color: white;
+			width: 50%;
+			margin: 4px;
+			padding: 5px;
+			font-family: 'Arial';
+		}	
+		div p{
+			margin: 2px;
+		}
+		body div div{
+			border: none;
+			background-color: green;
+			margin: 4px;
+			width: 50%;
+			
+		}
+		body div div div{
+			background-color: red;
+			border: none;
+			width: 50%;
+		}
+		body div + div{
+			border: none;
+			color:black;
+			background-color: yellow;
+			width: 50%;
+		}
+		body div + div + div{
+			border: none;
+			color:black;
+			background-color: cyan;
+			width: 50%;
+		}
+		body > div + div{
+			background-color: white;
+			border: 2px solid black;
+		}
+		body > div + div + div{
+			background-color: black;
+			border: 2px solid black;
+			color:  white;
+		}
+		
+	</style>
+ </head>
+ <body>
+	
+		<div><p>blue</p>
+			<div><p>green</p>
+				<div><p>red</p></div>
+			</div>
+			<div><p>yellow</p></div>
+			<div><p>cyan</p></div>
+		</div>
+		<div><p>white</p></div>
+		<div><p>black</p></div>
+	
+ </body>

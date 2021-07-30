@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Replicação de Página Completa - Guilherme Ajalla</title>
+	<style>
+		html{
+			width: 100%;
+		}
+
+		body{
+			margin: auto;
+			width: 75%;
+			font-family: system-ui;
+		}
+
+		.cabeca{
+			min-height: 110px;
+		}
+
+		.logo{
+			display: flex;
+			float: left;
+			clear: both;
+		}
+
+		#circulo{
+		    height: 100px;
+		    width: 100px;
+		    border-radius: 50%;
+		    background-color: orange;
+		    /*Referente à escrita*/
+		    line-height: 90px;
+		    text-align: center;
+		    font-size: 75px;
+		    color: white;
+		    font-weight: 500;
+		}
+
+		#cmenor{
+			height: 80px;
+		    width: 80px;
+		    border-radius: 50%;
+		    background-color: rgb(255 255 0 / 27%);
+		    position: relative;
+		    right: 43px;
+		    top: 6px;
+		}
+
+		#creative{
+		    font-size: 17px;
+		    position: relative;
+		    font-weight: bold;
+		    left: 20px;
+		}
+
+		#email{
+		    float: right;
+   			color: grey;
+		}
+
+		.links{
+			font-weight: bold;
+		    font-size: 14px;
+		    top: 35px;
+		    position: relative;
+		}
+		
+		ul > li{
+			list-style: none;
+			display: inline;
+		}
+
+		a{
+			text-decoration: none;
+			color: orange;
+			margin-left: 29px;
+		}
+
+		a:hover{
+			color: black;
+		}
+
+		.traco{
+			border-top: 0.5px solid rgb(172 169 169 / 68%);
+			padding: 2px;
+			position: relative;
+    		top: 2px;
+		}
+
+		.quadrado{
+			height: 250px;
+			width: 100%;
+			background-color: darkorange;
+		}
+
+		#q1{
+		    height: 225px;
+		    width: 30%;
+		    background-color: #9a9898;
+		    float: right;
+		    position: relative;
+		    top: 25px;		    
+		}
+
+		#q2{
+		    height: 185px;
+		    width: 20%;
+		    background-color: darkblue;
+		    float: right;
+		    box-shadow: -3px 0px 5px rgb(0 0 0 / 73%);
+		    position: relative;
+    		top: 65px;
+		}
+
+		#q3{
+			height: 20px;
+		    width: 45%;
+		    background-color: black;
+		    position: relative;
+		    top: 215px;
+    		left: 30px;
+		}
+
+		section > p{
+		    font-size: 50px;
+		    font-weight: bold;
+		    position: relative;
+		    bottom: 65px;
+		    left: 160px;
+		    color: white;		
+		}
+
+		.colunas{
+		    font-weight: bold;
+		    display: flex;
+		}
+
+		#about2{
+		    text-transform: uppercase;
+			display: inline-block;
+			width: 30%;
+		    margin-right: 30px;
+		}
+
+		#benefits{
+		    text-transform: uppercase;
+			display: inline-block;
+			width: 30%;
+		    margin-right: 30px;
+		}
+
+		#testimonials{
+		    text-transform: uppercase;
+			display: inline-block;
+			width: 30%;
+		    margin-right: 30px;
+		}
+
+		section > div > p{
+			font-size: 12px;
+		    font-weight: normal;
+		    text-transform: capitalize;
+		}
+
+		.ourPf div{
+			display: inline-block;
+			height: 120px;
+			width: 170px;
+			background-color: red;
+		    margin-right: 55px;
+		}
+
+		#blog div, #blog .redes-sociais{
+			display: inline-block;
+		}
+
+		#blog div:first-child{
+			width: 70%;
+		}
+
+		#blog .contato{
+			width: 25%;
+			float: right;
+		}
+
+		#blog .redes-sociais div{
+			width: 26px;
+			height: 26px;
+			background-color: blue;
+			border-radius: 50%;
+			margin-right: .5em;
+			border: 1px solid grey;
+			box-sizing: border-box;
+		}
+
+		footer{
+			background-color: #e1e1e1;
+			padding-bottom: 2em;
+			height: 75px;
+		}
+
+		footer .conteudo-footer div:first-child{
+			float: left;
+		}
+
+		footer li:not(:last-child)::after{
+			content: " | ";
+		}
+
+		footer ul{
+			margin-top: 2em;
+			margin-bottom: 5em;
+			font-size: 12px;
+		}
+
+		footer p{
+			font-size: 10px;
+		}
+
+		footer .marca-footer{
+			float: right;
+			width: 15px;
+		    right: 155px;
+    		top: 4px;
+		}
+
+		.copyright{
+			position: relative;
+		    bottom: 60px;
+		    left: 40px;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="cabeca">
+			<div class="logo">
+				<div id="circulo">C</div>
+				<div id="cmenor">
+					<p id="creative">CREATIVE<br>STUDIO</p>
+				</div>
+			</div>
+
+			<div id="email">info@CreativeStudio.com</div>
+
+			<nav class="links">
+				<ul>
+					<li><a href="#" id="home">HOME</a></li>
+					<li><a href="#" id="about">ABOUT US</a></li>
+					<li><a href="#" id="port">PORTFOLIO</a></li>
+					<li><a href="#" id="serv">SERVICES</a></li>
+					<li><a href="#" id="blod">BLOG</a></li>
+					<li><a href="#" id="contact">CONTACT US</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="traco"></div>
+
+		<section class="quadrado">
+			<div id="q1"></div>
+			<div id="q2"></div>
+			<div id="q3"></div>
+			<p>creative<br>design<br>services</p>
+		</section>
+
+		<div class="traco"></div>
+
+		<section class="colunas">
+			<div id="about2">About Us
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Proin condimentum varius scelerisque. Phasellus at mollis urna. 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Quisque a ultricies elit. Praesent eget justo sagittis, 
+					vehicula mi nec, ultrices elit.
+					<p><a href="#">Read</a></p>
+				</p>
+			</div>
+			<div id="benefits">Benefits
+				<p>Integer mauris lorem, ornare id tortor et, elementum accumsan ipsum.</p>
+				<p>Vestibulum iaculis elementum massa ac rhoncus.</p> 
+				<p>Maecenas viverra enim sodales tincidunt pulvinar.</p>
+			</div>
+			<div id="testimonials">Testimonials
+				<p>
+					Donec condimentum hendrerit pharetra. Sed malesuada in purus nec auctor. Pellentesque sagittis aliquam risus, ac scelerisque libero eleifend quis. Sed posuere mauris vitae cursus consectetur. Nunc maximus cursus neque.
+				</p>
+				<p>Rafi, Grahphicsfuel.com</p>
+			</div>
+		</section>
+
+		<div class="traco"></div>
+
+		<section class="ourPf">
+			<h2 id="portifolio">Our Portfolio</h2>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+		</section>
+
+		<div class="traco"></div>
+
+		<section id="blog">
+			<div>
+				<h3>Blog updates</h3>
+				<p>Lorem ipsum libero proin vitae turpis fames, mi nulla praesent nisl praesent mauris a, augue pharetra posuere nisl rutrum.</p>
+			</div>
+			<div class="contato">
+				<h3>Connect with us</h3>
+				<div class="redes-sociais">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</section>
+	</main>
+		<footer>
+		<div class="conteudo-footer">
+			<div>
+				<ul>
+					<li>Home</li>
+					<li>About Us</li>
+					<li>Portfolio</li>
+					<li>Services</li>
+					<li>Blog</li>
+					<li>Contact Us</li>
+				</ul>
+				<p class="copyright">&copy; 2010 CreativeStudio. All Rights Reserved</p>
+			</div>
+			
+			<div class="marca-footer">
+				<div class="logo">
+				<div id="circulo">C</div>
+				<div id="cmenor">
+					<p id="creative">CREATIVE<br>STUDIO</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
